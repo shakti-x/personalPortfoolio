@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shakti | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+    *    
+    {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #f5f7fa;
+    color: #222;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    background: #111;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.logo {
+    color: #fff;
+    font-size: 28px;
+}
+
+.logo span {
+    color: #00eaff;
+}
+
+nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #00eaff;
+}
+
+/* HERO SECTION */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 80px;
+    align-items: center;
+    background: linear-gradient(135deg, #00eaff, #007dff);
+}
+
+.hero-text h1 {
+    font-size: 45px;
+    color: white;
+}
+
+.hero-text p {
+    color: #f0f0f0;
+    margin: 10px 0;
+}
+
+.hero-text span {
+    color: #111;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 22px;
+    background: #111;
+    color: white;
+    text-decoration: none;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.hero-img img {
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    border: 6px solid white;
+}
+
+/* SECTION TITLES */
+.title {
+    text-align: center;
+    font-size: 32px;
+    margin: 50px 0 20px;
+}
+
+/* ABOUT */
+.about {
+    padding: 0 50px;
+}
+
+.about p {
+    max-width: 800px;
+    margin: auto;
+    font-size: 18px;
+    text-align: center;
+}
+
+.education table {
+    margin: 30px auto;
+    width: 70%;
+    border-collapse: collapse;
+}
+
+.education th, .education td {
+    border: 1px solid #444;
+    padding: 12px;
+}
+
+/* SKILLS */
+.skills {
+    background: #e8f9ff;
+    padding: 20px 0;
+}
+
+.skill-box {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.skill-card {
+    background: #111;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+}
+
+/* PROJECTS */
+.projects {
+    padding: 20px 0;
+}
+
+.project-box {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    background: white;
+    width: 300px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+
+.project-card button {
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px;
+    background: #111;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* BLOG */
+.blog {
+    padding: 20px 50px;
+}
+
+.blog-card {
+    background: white;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.blog-card a {
+    text-decoration: none;
+    color: #007dff;
+    font-weight: bold;
+}
+
+/* CONTACT */
+.contact {
+    text-align: center;
+    padding: 50px;
+}
+
+.contact a {
+    color: #007dff;
+    text-decoration: none;
+}
+
+/* FOOTER */
+footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+    </style>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+        <h2 class="logo">Shakti<span></span></h2>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#blog">Blog</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+        <div class="hero-text">
+            <h1>Hello, I'm <span>Shakti</span></h1>
+            <p>A Tech Enthusiast | Web Developer | Programmer</p>
+            <a href="#projects" class="btn">View Projects</a>
+        </div>
+
+        <div class="hero-img">
+            <img src="shaktinew.jpg" alt="Shakti">
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="about">
+        <h2 class="title">About Me</h2>
+        <p>
+            I'm a passionate student who loves technology, programming, and web development.
+            I enjoy creating innovative projects that make life easier and smarter.
+            Currently pursuing B.Tech from KIET Group of Institutions (2025–2029).
+        </p>
+
+        <div class="education">
+            <h3>Education</h3>
+            <table>
+                <tr>
+                    <th>Course</th>
+                    <th>Institution</th>
+                    <th>Year</th>
+                </tr>
+                <tr>
+                    <td>B.Tech</td>
+                    <td>KIET Group of Institutions</td>
+                    <td>2025–2029</td>
+                </tr>
+                <tr>
+                    <td>Intermediate</td>
+                    <td>CAV INTER COLLEGE</td>
+                    <td>2023</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="skills">
+        <h2 class="title">My Skills</h2>
+
+        <div class="skill-box">
+            <div class="skill-card">HTML & CSS</div>
+            <div class="skill-card">C Programming</div>
+            <div class="skill-card">Python</div>
+            <div class="skill-card">Problem Solving</div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="projects">
+        <h2 class="title">Projects</h2>
+
+        <div class="project-box">
+
+            <div class="project-card">
+                <h3>Portfolio Website</h3>
+                <p>A clean and modern personal portfolio website using HTML & CSS.</p>
+                <button>View</button>
+            </div>
+
+            <div class="project-card">
+                <h3>Recipe Blog</h3>
+                <p>A stylish recipe-sharing blog with search & rating features.</p>
+                <button>View</button>
+            </div>
+
+            <div class="project-card">
+                <h3>Learning Platform</h3>
+                <p>Online learning platform with courses and testimonials.</p>
+                <button>View</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- BLOG SECTION -->
+    <section id="blog" class="blog">
+        <h2 class="title">My Blog</h2>
+
+        <div class="blog-card">
+            <h3>🔹 How I Started Web Development</h3>
+            <p>My journey into coding and how I built my first website using HTML & CSS.</p>
+            <a href="#">Read More</a>
+        </div>
+
+        <div class="blog-card">
+            <h3>🔹 Why Programming Is the Future</h3>
+            <p>Why every student should learn coding in today's digital world.</p>
+            <a href="#">Read More</a>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contact">
+        <h2 class="title">Contact Me</h2>
+        <p>Feel free to reach out!</p>
+
+        <p>📧 Email: <a href="mailto:edushaktix@gmail.com">edushaktix@gmail.com</a></p>
+        <p>🔗 GitHub: <a href="https://github.com/shakti-x" target="_blank">github.com/shakti-x</a></p>
+        <p>💼 LinkedIn: <a href="https://www.linkedin.com/in/shakti-08034b30a/" target="_blank">LinkedIn Profile</a></p>
+    </section>
+
+    <footer>
+        © 2025 Shakti Yadav | All Rights Reserved
+    </footer>
+
+</body>
+</html>
